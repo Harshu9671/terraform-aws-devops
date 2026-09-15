@@ -24,7 +24,7 @@
 
 terraform {
   backend "s3" {
-    bucket  = "your-terraform-state-bucket-name"
+    bucket  = "harshu-terraform-state-2026"
     key     = "terraform-aws-devops/terraform.tfstate"
     region  = "us-east-1"
     encrypt = true
