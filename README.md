@@ -99,18 +99,18 @@ cd terraform-aws-devops
 ```bash
 # Create the bucket
 aws s3api create-bucket \
-  --bucket <your-unique-bucket-name> \
+  --bucket harshu-terraform-state-2026 \
   --region us-east-1
 
 # Enable versioning
 aws s3api put-bucket-versioning \
-  --bucket <your-unique-bucket-name> \
+  --bucket harshu-terraform-state-2026 \
   --versioning-configuration Status=Enabled
 ```
 
 ### 3. Update Backend Configuration
 
-Edit `backend.tf` and replace `your-terraform-state-bucket-name` with your actual bucket name.
+Edit `backend.tf` and ensure the bucket is set to `harshu-terraform-state-2026`.
 
 ### 4. Configure GitHub Secrets
 
